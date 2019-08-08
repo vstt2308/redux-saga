@@ -1,17 +1,17 @@
 module.exports = {
-  parser: "babel-eslint",
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 6,
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
   },
   extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "airbnb",
-    "prettier"
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'airbnb',
+    'prettier',
   ],
   rules: {
     'react/prop-types': 1,
@@ -25,22 +25,22 @@ module.exports = {
     'react/require-default-props': 0,
     'react/jsx-closing-tag-location': 0,
     'lines-between-class-members': 0,
-    'prettier/prettier':['error'],
-    'no-unused-vars':1,
-    'import/order':1,
-    'react/prefer-stateless-function':0,
-    'no-use-before-define':0,
-    'no-param-reassign':0,
-    'import/no-useless-path-segments':0,
-    'import/prefer-default-export':0,
-    'import/newline-after-import':1,
-    'spaced-comment':1
+    'prettier/prettier': ['error'],
+    'no-unused-vars': 1,
+    'import/order': 1,
+    'react/prefer-stateless-function': 0,
+    'no-use-before-define': 0,
+    'no-param-reassign': 0,
+    'import/no-useless-path-segments': 0,
+    'import/prefer-default-export': 0,
+    'import/newline-after-import': 1,
+    'spaced-comment': 1,
+    'react/jsx-uses-vars': 2,
   },
-  plugins:['prettier'],
-  env:{
-    "es6": true ,
-    "browser": true,
-    "node":true
-  }
-
+  plugins: ['prettier'],
+  env: {
+    es6: true,
+    browser: true,
+    node: true,
+  },
 };
